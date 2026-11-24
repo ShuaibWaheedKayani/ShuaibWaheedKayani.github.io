@@ -1,23 +1,504 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Shuaib Waheed AI Engineer portfolio"><title>Shuaib Waheed | AI Engineer</title><link rel="stylesheet" href="styles.css"></head><body>
-<header><a class="logo" href="#">SW<span>.</span></a><nav><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#journal">Journal</a><a href="#contact">Contact</a></nav></header><main>
-<section class="hero"><small>AI ENGINEER · MACHINE LEARNING · AGENTIC AUTOMATION</small><h1>Building intelligent systems,<br><em>from models to agents.</em></h1><p>I explore and build practical AI solutions across Python, machine learning, large language models, model training and fine-tuning, agentic AI, and business process automation.</p><a class="btn" href="#projects">Explore my work ↗</a><div class="chips"><span>Python</span><span>ML / Deep Learning</span><span>LLMs</span><span>Fine-tuning</span><span>Agentic AI</span><span>n8n · Make · GHL</span></div></section>
-<section id="about"><small>01 / ABOUT</small><h2>AI engineering with a practical mindset.</h2><p>I’m Shuaib Waheed, an AI-focused engineer interested in turning data, models, and connected tools into useful products and automations. This portfolio brings together my projects, experiments, technical notes, and learning journey—from Python and ML fundamentals to LLM applications, model adaptation, AI agents, and CRM automation.</p><p class="muted">Keep this introduction accurate to your current experience. Label work as a project, experiment, coursework, or professional experience where appropriate.</p></section>
-<section id="expertise"><small>02 / TECHNICAL EXPERTISE</small><h2>Areas I work across</h2><div class="grid">
-<article><b>Python & Software</b><p>Python programming, scripting, OOP, data structures, APIs, Git, debugging, and environments.</p><label>Python · Git · REST APIs</label></article>
-<article><b>Machine Learning</b><p>Data preprocessing, feature engineering, supervised and unsupervised learning, training, validation, and evaluation.</p><label>scikit-learn · pandas · NumPy</label></article>
-<article><b>Deep Learning</b><p>Neural networks, training loops, loss functions, optimizers, backpropagation, and experiments.</p><label>PyTorch · TensorFlow / Keras</label></article>
-<article><b>LLMs & Generative AI</b><p>Prompt engineering, structured outputs, embeddings, vector search, RAG, and tool calling.</p><label>OpenAI · Gemini · Llama · Hugging Face</label></article>
-<article><b>Model Training & Fine-tuning</b><p>Dataset preparation, baselines, transfer learning, fine-tuning experiments, and model comparison.</p><label>Transformers · LoRA / QLoRA</label></article>
-<article><b>Agentic AI</b><p>Tool-using agents, multi-step workflows, memory, orchestration, human approval, and multi-agent patterns.</p><label>LangChain · LangGraph · Agent workflows</label></article>
-<article><b>Workflow Automation</b><p>App integrations, webhooks, API workflows, lead routing, notifications, and error handling.</p><label>n8n · Make · Zapier</label></article>
-<article><b>CRM & Business Systems</b><p>Lead capture, pipeline automation, follow-ups, appointments, and customer operations.</p><label>GoHighLevel · Google Sheets · CRMs</label></article>
-<article><b>Deployment & Evaluation</b><p>Model/API serving concepts, testing, output evaluation, monitoring, documentation, and responsible deployment.</p><label>FastAPI · Docker basics · Testing</label></article></div><p class="muted note">These are skill areas to customize, not automatic claims of proficiency. Keep only tools you have used and mark developing skills as “learning” or “exploring.”</p></section>
-<section id="projects"><small>03 / SELECTED WORK</small><h2>Projects & experiments</h2><p class="muted">Show the problem, your approach, architecture, evaluation, limitations, and a working demo.</p><div class="grid">
-<article><label>01 · AUTOMATION / N8N</label><b>Lead Generation & Enrichment</b><p>Business discovery, data extraction, cleaning, enrichment, and structured CRM/spreadsheet storage.</p><a href="projects/lead-generation.md">Case study ↗</a></article>
-<article><label>02 · LLM / RAG</label><b>Knowledge Base AI Assistant</b><p>Retrieval-based assistant that answers from supplied documents with grounded context.</p><a href="projects/rag-assistant.md">Case study ↗</a></article>
-<article><label>03 · ML / DL</label><b>Model Training & Evaluation</b><p>Train a baseline model, compare experiments, evaluate performance, and document limitations.</p><a href="projects/model-training.md">Case study ↗</a></article>
-<article><label>04 · FINE-TUNING</label><b>LLM Fine-tuning Experiment</b><p>Prepare a task dataset, run a controlled fine-tuning experiment, and compare against a baseline.</p><a href="projects/fine-tuning.md">Case study ↗</a></article>
-<article><label>05 · AGENTIC AI</label><b>Tool-Using AI Agent</b><p>Agent selects approved tools, handles errors, and requests human approval when needed.</p><a href="projects/agentic-ai.md">Case study ↗</a></article>
-<article><label>06 · CRM / GHL</label><b>CRM Lead Follow-up System</b><p>Connect lead forms, automate follow-ups, update pipeline stages, and stop when leads respond.</p><a href="projects/ghl-automation.md">Case study ↗</a></article></div><p class="muted note">These are suggested project slots, not claims of completed work. Publish each as completed only after building it and adding real evidence.</p></section>
-<section id="journal"><small>04 / ENGINEERING JOURNAL</small><h2>Notes, experiments & learning</h2><p class="muted">Write short technical notes about what you tested, what worked, what failed, and what you learned.</p><div class="journal"><a href="journal/python-ml-notes.md">Python for AI engineering <span>↗</span></a><a href="journal/model-training-log.md">Model training and evaluation log <span>↗</span></a><a href="journal/llm-fine-tuning-notes.md">Fine-tuning: datasets, LoRA and evaluation <span>↗</span></a><a href="journal/agentic-ai-notes.md">Building reliable tool-using agents <span>↗</span></a></div></section>
-<section id="contact"><small>05 / CONTACT</small><h2>Have an AI or automation challenge?</h2><p class="muted">Let’s discuss practical AI engineering, LLM applications, agentic systems, and workflow automation.</p><a class="btn" href="https://www.upwork.com/">Upwork ↗</a> <a class="btn alt" href="https://www.linkedin.com/">LinkedIn ↗</a><p class="muted note">Replace these links with your real profile URLs and add your email.</p></section></main><footer>© <span id="year"></span> Shuaib Waheed · AI Engineering & Learning in Public</footer><script src="script.js"></script></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Shuaib Waheed Kayani - AI Engineer specializing in Artificial Intelligence, Machine Learning, Generative AI and Automation.">
+
+    <title>Shuaib Waheed Kayani | AI Engineer</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav container">
+
+            <a class="brand" href="#home">SWK<span>.</span></a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero container" id="home">
+
+            <div class="hero-copy">
+
+                <p class="eyebrow">
+                    AI ENGINEER • ISLAMABAD, PAKISTAN
+                </p>
+
+                <h1>
+                    Building useful solutions with
+                    <span>AI & Automation.</span>
+                </h1>
+
+                <p class="hero-text">
+                    I'm Shuaib Waheed Kayani, an aspiring AI Engineer
+                    passionate about Artificial Intelligence, Machine
+                    Learning, Generative AI, and intelligent automation.
+                    I enjoy transforming ideas into practical technology
+                    solutions.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="button button-primary" href="#projects">
+                        Explore My Work ↗
+                    </a>
+
+                    <a class="button button-secondary" href="#contact">
+                        Contact Me
+                    </a>
+
+                </div>
+
+                <div class="hero-meta">
+
+                    <div>
+                        <strong>AI & Machine Learning</strong>
+                        <span>Intelligent Applications</span>
+                    </div>
+
+                    <div>
+                        <strong>Generative AI</strong>
+                        <span>LLMs and AI Agents</span>
+                    </div>
+
+                    <div>
+                        <strong>Automation</strong>
+                        <span>Business Workflows</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="core">
+                    <span class="core-symbol">✳</span>
+                    <span class="core-label">AI</span>
+                </div>
+
+                <span class="node node-one">ML</span>
+                <span class="node node-two">LLM</span>
+                <span class="node node-three">API</span>
+                <span class="node node-four">⚡</span>
+
+                <div class="visual-caption">
+                    IDEAS → INTELLIGENCE → IMPACT
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section class="section container" id="about">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">01 / ABOUT ME</p>
+
+                <h2>
+                    Curious about technology.
+                    <br>
+                    <span>Focused on practical impact.</span>
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <p class="about-lead">
+                    I am an aspiring AI Engineer interested in
+                    developing intelligent applications and
+                    solving real-world problems through technology.
+                </p>
+
+                <div class="about-detail">
+
+                    <p>
+                        My interests include Python development,
+                        Machine Learning, Deep Learning,
+                        Large Language Models, Generative AI,
+                        AI Agents, and Business Process Automation.
+                    </p>
+
+                    <p>
+                        I enjoy learning new technologies,
+                        experimenting with AI tools, and
+                        developing practical projects that
+                        combine intelligent systems with automation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPERTISE SECTION -->
+        <section class="section expertise-section" id="expertise">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">02 / EXPERTISE</p>
+
+                    <h2>
+                        My Technical
+                        <span>Expertise.</span>
+                    </h2>
+
+                    <p class="section-intro">
+                        Exploring and building solutions across
+                        artificial intelligence, generative AI,
+                        and business automation.
+                    </p>
+
+                </div>
+
+
+                <div class="expertise-grid">
+
+                    <!-- AI & ML -->
+                    <article class="expertise-card">
+
+                        <div class="card-icon">⌘</div>
+
+                        <h3>AI & Machine Learning</h3>
+
+                        <p>
+                            Developing foundations in machine
+                            learning, data-driven modelling,
+                            and intelligent applications.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Deep Learning</span>
+                            <span>Model Evaluation</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- GENERATIVE AI -->
+                    <article class="expertise-card">
+
+                        <div class="card-icon">✳</div>
+
+                        <h3>Generative & Agentic AI</h3>
+
+                        <p>
+                            Exploring large language models,
+                            retrieval systems, AI agents,
+                            and intelligent applications.
+                        </p>
+
+                        <div class="tags">
+                            <span>LLMs</span>
+                            <span>RAG</span>
+                            <span>Prompt Engineering</span>
+                            <span>AI Agents</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- AUTOMATION -->
+                    <article class="expertise-card">
+
+                        <div class="card-icon">↗</div>
+
+                        <h3>Business AI Automation</h3>
+
+                        <p>
+                            Building automated workflows,
+                            connecting applications, and
+                            integrating business systems.
+                        </p>
+
+                        <div class="tags">
+                            <span>n8n</span>
+                            <span>Zapier</span>
+                            <span>Make.com</span>
+                            <span>APIs</span>
+                            <span>Webhooks</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <p class="small-note">
+                    Note: My portfolio distinguishes practical
+                    experience from technologies I am currently learning.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section class="section container" id="projects">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">03 / PROJECTS</p>
+
+                <h2>
+                    My Selected
+                    <span>Projects.</span>
+                </h2>
+
+                <p class="section-intro">
+                    Academic and practical projects demonstrating
+                    my interests in AI, software development,
+                    and automation.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <!-- PROJECT 1 -->
+                <article class="project-card project-featured">
+
+                    <div class="project-top">
+                        <span class="project-number">PROJECT 01</span>
+                        <span class="project-type">Academic Project</span>
+                    </div>
+
+                    <div class="project-art art-notes">
+                        <span>Notes<span>Wise</span></span>
+                        <i>✳</i>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            NotesWise — AI-Powered Study Application
+                        </h3>
+
+                        <p>
+                            A Python and Django-based study application
+                            designed to help students organize learning
+                            materials and use AI-powered features such
+                            as summarization, grammar checking,
+                            flashcards, concept mapping, and translation.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>MySQL</span>
+                            <span>Artificial Intelligence</span>
+                        </div>
+
+                        <span class="project-status">
+                            Academic / Final-Year Project
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-number">PROJECT 02</span>
+                        <span class="project-type">Automation</span>
+                    </div>
+
+                    <div class="project-art art-workflow">
+
+                        <div class="workflow-line">
+                            <b>INPUT</b>
+                            <i>→</i>
+                            <b>PROCESS</b>
+                            <i>→</i>
+                            <b>OUTPUT</b>
+                        </div>
+
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            AI Lead Generation Automation
+                        </h3>
+
+                        <p>
+                            An n8n-based workflow that collects
+                            business information from map search
+                            results, processes records, and organizes
+                            potential leads in Google Sheets.
+                        </p>
+
+                        <div class="tags">
+                            <span>n8n</span>
+                            <span>APIs</span>
+                            <span>Google Sheets</span>
+                            <span>Automation</span>
+                        </div>
+
+                        <span class="project-status">
+                            Practical Workflow
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <span class="project-number">PROJECT 03</span>
+                        <span class="project-type">AI / ML</span>
+                    </div>
+
+                    <div class="project-art art-next">
+                        <span>+</span>
+                    </div>
+
+                    <div class="project-content">
+
+                        <h3>
+                            More AI & Machine Learning Projects
+                        </h3>
+
+                        <p>
+                            More projects involving machine learning,
+                            generative AI, large language models,
+                            and agentic AI will be added as they
+                            are completed.
+                        </p>
+
+                        <div class="tags">
+                            <span>Machine Learning</span>
+                            <span>LLMs</span>
+                            <span>AI Agents</span>
+                        </div>
+
+                        <span class="project-status">
+                            Portfolio in Progress
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+
+            <div class="container contact-inner">
+
+                <div>
+
+                    <p class="eyebrow">04 / CONTACT</p>
+
+                    <h2>
+                        Let's build something
+                        <br>
+                        <span>meaningful with AI.</span>
+                    </h2>
+
+                    <p class="contact-copy">
+                        Have a project, opportunity, or idea?
+                        Feel free to connect with me.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <!-- Replace with your real email -->
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        Email Me <span>↗</span>
+                    </a>
+
+                    <!-- Replace with your LinkedIn profile -->
+                    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
+                       target="_blank" rel="noopener noreferrer">
+                        LinkedIn <span>↗</span>
+                    </a>
+
+                    <a href="https://github.com/ShuaibWaheedKayani"
+                       target="_blank" rel="noopener noreferrer">
+                        GitHub <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <a class="brand" href="#home">SWK<span>.</span></a>
+
+            <p>
+                © <span id="year"></span>
+                Shuaib Waheed Kayani. All rights reserved.
+            </p>
+
+            <a href="#home" class="back-top">
+                Back to Top ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
